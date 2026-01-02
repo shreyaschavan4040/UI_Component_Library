@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - UI Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <span>UI Library</span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="components.html">Components</a></li>
+                    <li><a href="documentation.html">Docs</a></li>
+                    <li><a href="examples.html">Examples</a></li>
+                    <li><a href="customize.html">Customize</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+    <main class="documentation-page">
+        <div class="container">
+            <div class="docs-container">
+                <aside class="docs-sidebar">
+                    <nav class="docs-nav">
+                        <h3>Getting Started</h3>
+                        <ul>
+                            <li><a href="#installation">Installation</a></li>
+                            <li><a href="#quickstart">Quick Start</a></li>
+                            <li><a href="#customization">Customization</a></li>
+                        </ul>
+                        
+                        <h3>Components</h3>
+                        <ul>
+                            <li><a href="#buttons-docs">Buttons</a></li>
+                            <li><a href="#cards-docs">Cards</a></li>
+                            <li><a href="#alerts-docs">Alerts</a></li>
+                            <li><a href="#forms-docs">Forms</a></li>
+                            <li><a href="#navigation-docs">Navigation</a></li>
+                        </ul>
+                        
+                        <h3>Utilities</h3>
+                        <ul>
+                            <li><a href="#spacing">Spacing</a></li>
+                            <li><a href="#colors">Colors</a></li>
+                            <li><a href="#typography">Typography</a></li>
+                            <li><a href="#responsive">Responsive</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+                
+                <div class="docs-content">
+                    <div class="docs-section" id="installation">
+                        <h1>Documentation</h1>
+                        <p class="lead">Complete guide to using the UI Component Library</p>
+                        
+                        <h2>Installation</h2>
+                        <p>Include the library in your project by adding the following to your HTML head:</p>
+                        
+                        <div class="code-block">
+<pre><code>&lt;!-- Add to your HTML head --&gt;
+&lt;link rel="stylesheet" href="path/to/style.css"&gt;
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"&gt;
+
+&lt;!-- Add before closing body tag --&gt;
+&lt;script src="path/to/script.js"&gt;&lt;/script&gt;</code></pre>
+                        </div>
+                    </div>
+                    
+                    <div class="docs-section" id="quickstart">
+                        <h2>Quick Start</h2>
+                        <p>Here's a simple example to get started:</p>
+                        
+                        <div class="code-block">
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;My Project&lt;/title&gt;
+    &lt;link rel="stylesheet" href="path/to/style.css"&gt;
+    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;button class="btn btn-primary"&gt;Click Me&lt;/button&gt;
+    &lt;div class="alert alert-success"&gt;Success message&lt;/div&gt;
+    
+    &lt;script src="path/to/script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                        </div>
+                    </div>
+                    
+                    <div class="docs-section" id="buttons-docs">
+                        <h2>Buttons</h2>
+                        <p>Buttons come in various styles, sizes, and states. All buttons require the base <code>.btn</code> class.</p>
+                        
+                        <h3>Button Classes</h3>
+                        <table class="docs-table">
+                            <thead>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>.btn</code></td>
+                                    <td>Base button style (required)</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.btn-primary</code></td>
+                                    <td>Primary action button</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.btn-secondary</code></td>
+                                    <td>Secondary action button</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.btn-outline</code></td>
+                                    <td>Outline style button</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.btn-small</code></td>
+                                    <td>Small button size</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.btn-large</code></td>
+                                    <td>Large button size</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="docs-section" id="customization">
+                        <h2>Customization</h2>
+                        <p>The library uses CSS custom properties (variables) for easy customization. Override these variables in your own CSS:</p>
+                        
+                        <div class="code-block">
+<pre><code>:root {
+    /* Override default colors */
+    --primary: #007bff;
+    --primary-dark: #0056b3;
+    --secondary: #6c757d;
+    
+    /* Override spacing */
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    
+    /* Override border radius */
+    --radius-md: 6px;
+    --radius-lg: 12px;
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <span>UI Library</span>
+                    </div>
+                    <p class="footer-description">A modern UI component library for faster web development.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="documentation.html">Documentation</a></li>
+                            <li><a href="examples.html">Examples</a></li>
+                            <li><a href="customize.html">Customization</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 UI Component Library. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

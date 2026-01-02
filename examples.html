@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examples - UI Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <span>UI Library</span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="components.html">Components</a></li>
+                    <li><a href="documentation.html">Docs</a></li>
+                    <li><a href="examples.html">Examples</a></li>
+                    <li><a href="customize.html">Customize</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+</header>
+            </div>
+        </div>
+    </header>
+
+    <main class="examples-page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Live Examples</h1>
+                <p>Interactive examples demonstrating component usage in real scenarios</p>
+            </div>
+
+            <div class="examples-container">
+                <section class="example-section">
+                    <h2>Login Form</h2>
+                    <p>A complete login form with validation and responsive design.</p>
+                    
+                    <div class="example-demo">
+                        <div class="login-example">
+                            <div class="card" style="max-width: 400px;">
+                                <div class="card-content">
+                                    <h3 class="card-title text-center">Welcome Back</h3>
+                                    <p class="text-center text-muted">Sign in to your account</p>
+                                    
+                                    <form id="loginForm" class="form-example">
+                                        <div class="form-group">
+                                            <label class="form-label" for="exampleEmail">Email Address</label>
+                                            <input type="email" class="form-control" id="exampleEmail" placeholder="name@example.com" required>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label class="form-label" for="examplePassword">Password</label>
+                                            <input type="password" class="form-control" id="examplePassword" placeholder="Enter password" required>
+                                            <div class="form-help">
+                                                <a href="#" class="text-small">Forgot password?</a>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="rememberMe">
+                                                <label for="rememberMe">Remember me</label>
+                                            </div>
+                                        </div>
+                                        
+                                        <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                                        
+                                        <div class="text-center mt-2">
+                                            <p class="text-small">Don't have an account? <a href="#">Sign up</a></p>
+                                        </div>
+                                    </form>
+                                    
+                                    <div class="login-result mt-2" id="loginResult"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="example-code">
+                        <h4>Code</h4>
+                        <div class="code-block">
+<pre><code>&lt;form class="form-example"&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label class="form-label" for="email"&gt;Email&lt;/label&gt;
+    &lt;input type="email" class="form-control" id="email" required&gt;
+  &lt;/div&gt;
+  
+  &lt;div class="form-group"&gt;
+    &lt;label class="form-label" for="password"&gt;Password&lt;/label&gt;
+    &lt;input type="password" class="form-control" id="password" required&gt;
+  &lt;/div&gt;
+  
+  &lt;button type="submit" class="btn btn-primary btn-block"&gt;Sign In&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="example-section">
+                    <h2>User Profile Card</h2>
+                    <p>A responsive profile card with user information and actions.</p>
+                    
+                    <div class="example-demo">
+                        <div class="profile-example">
+                            <div class="card profile-card">
+                                <div class="card-content">
+                                    <div class="profile-header">
+                                        <div class="profile-avatar">
+                                            <i class="fas fa-user-circle"></i>
+                                        </div>
+                                        <div class="profile-info">
+                                            <h3 class="profile-name">Alex Johnson</h3>
+                                            <p class="profile-title">Frontend Developer</p>
+                                            <div class="profile-stats">
+                                                <span class="stat">
+                                                    <strong>142</strong> Posts
+                                                </span>
+                                                <span class="stat">
+                                                    <strong>2.4k</strong> Followers
+                                                </span>
+                                                <span class="stat">
+                                                    <strong>356</strong> Following
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="profile-bio">
+                                        <p>Passionate about creating beautiful and functional user interfaces. Loves JavaScript, CSS, and open source.</p>
+                                    </div>
+                                    
+                                    <div class="profile-skills">
+                                        <span class="badge badge-primary">JavaScript</span>
+                                        <span class="badge badge-primary">CSS</span>
+                                        <span class="badge badge-primary">React</span>
+                                        <span class="badge badge-primary">UI Design</span>
+                                    </div>
+                                    
+                                    <div class="profile-actions">
+                                        <button class="btn btn-primary">Follow</button>
+                                        <button class="btn btn-outline">Message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="example-section">
+                    <h2>Notification System</h2>
+                    <p>Interactive notification toast messages with different types.</p>
+                    
+                    <div class="example-demo">
+                        <div class="notification-example">
+                            <p>Click buttons to show notifications:</p>
+                            <div class="demo-area">
+                                <button class="btn btn-success" id="showSuccess">Success Notification</button>
+                                <button class="btn btn-warning" id="showWarning">Warning Notification</button>
+                                <button class="btn btn-danger" id="showError">Error Notification</button>
+                                <button class="btn btn-info" id="showInfo">Info Notification</button>
+                            </div>
+                            
+                            <div class="notification-container" id="notificationContainer"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <span>UI Library</span>
+                    </div>
+                    <p class="footer-description">A modern UI component library for faster web development.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="documentation.html">Documentation</a></li>
+                            <li><a href="examples.html">Examples</a></li>
+                            <li><a href="customize.html">Customization</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 UI Component Library. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
