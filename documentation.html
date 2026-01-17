@@ -147,6 +147,684 @@
                         </table>
                     </div>
                     
+                    <div class="docs-section" id="cards-docs">
+                        <h2>Cards</h2>
+                        <p>Cards are flexible content containers with multiple variants and options.</p>
+                        
+                        <h3>Basic Card Structure</h3>
+                        <div class="code-block">
+<pre><code>&lt;div class="card"&gt;
+    &lt;div class="card-image"&gt;
+        &lt;i class="fas fa-image"&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class="card-content"&gt;
+        &lt;h3 class="card-title"&gt;Card Title&lt;/h3&gt;
+        &lt;p class="card-text"&gt;This is a description of the card content.&lt;/p&gt;
+        &lt;div class="card-actions"&gt;
+            &lt;button class="btn btn-primary"&gt;Action&lt;/button&gt;
+            &lt;button class="btn btn-outline"&gt;Secondary&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                        </div>
+                        
+                        <h3>Card Classes</h3>
+                        <table class="docs-table">
+                            <thead>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>.card</code></td>
+                                    <td>Base card container</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.card-image</code></td>
+                                    <td>Container for card image/icon</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.card-content</code></td>
+                                    <td>Container for text content</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.card-title</code></td>
+                                    <td>Card title heading</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.card-text</code></td>
+                                    <td>Card description text</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.card-actions</code></td>
+                                    <td>Container for action buttons</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="docs-section" id="alerts-docs">
+                        <h2>Alerts</h2>
+                        <p>Provide contextual feedback messages for user actions.</p>
+                        
+                        <h3>Alert Types</h3>
+                        <div class="code-block">
+<pre><code>&lt;!-- Success Alert --&gt;
+&lt;div class="alert alert-success"&gt;
+    &lt;i class="fas fa-check-circle"&gt;&lt;/i&gt;
+    &lt;div&gt;Success! Your action was completed.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Warning Alert --&gt;
+&lt;div class="alert alert-warning"&gt;
+    &lt;i class="fas fa-exclamation-triangle"&gt;&lt;/i&gt;
+    &lt;div&gt;Warning! Please check your input.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Danger Alert --&gt;
+&lt;div class="alert alert-danger"&gt;
+    &lt;i class="fas fa-times-circle"&gt;&lt;/i&gt;
+    &lt;div&gt;Error! Something went wrong.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Info Alert --&gt;
+&lt;div class="alert alert-info"&gt;
+    &lt;i class="fas fa-info-circle"&gt;&lt;/i&gt;
+    &lt;div&gt;Info: Here's some information.&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                        </div>
+                        
+                        <h3>Alert Classes</h3>
+                        <table class="docs-table">
+                            <thead>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>.alert</code></td>
+                                    <td>Base alert container</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.alert-success</code></td>
+                                    <td>Success/positive feedback</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.alert-warning</code></td>
+                                    <td>Warning/caution messages</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.alert-danger</code></td>
+                                    <td>Error/negative feedback</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.alert-info</code></td>
+                                    <td>Informational messages</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="docs-section" id="forms-docs">
+                        <h2>Forms</h2>
+                        <p>Form controls with various input types and validation styles.</p>
+                        
+                        <h3>Basic Form Structure</h3>
+                        <div class="code-block">
+<pre><code>&lt;form&gt;
+    &lt;div class="form-group"&gt;
+        &lt;label class="form-label" for="name"&gt;Full Name&lt;/label&gt;
+        &lt;input type="text" class="form-control" id="name" placeholder="Enter your name"&gt;
+        &lt;div class="form-help"&gt;Enter your full name as it appears on ID&lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class="form-group"&gt;
+        &lt;label class="form-label" for="email"&gt;Email Address&lt;/label&gt;
+        &lt;input type="email" class="form-control" id="email" placeholder="email@example.com"&gt;
+    &lt;/div&gt;
+    
+    &lt;div class="form-group"&gt;
+        &lt;label class="form-label" for="password"&gt;Password&lt;/label&gt;
+        &lt;input type="password" class="form-control" id="password" placeholder="Enter password"&gt;
+    &lt;/div&gt;
+    
+    &lt;div class="form-group"&gt;
+        &lt;label class="checkbox"&gt;
+            &lt;input type="checkbox"&gt;
+            &lt;span&gt;Remember me&lt;/span&gt;
+        &lt;/label&gt;
+        
+        &lt;label class="radio"&gt;
+            &lt;input type="radio" name="option"&gt;
+            &lt;span&gt;Option 1&lt;/span&gt;
+        &lt;/label&gt;
+    &lt;/div&gt;
+    
+    &lt;button type="submit" class="btn btn-primary"&gt;Submit Form&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+                        </div>
+                        
+                        <h3>Form Classes</h3>
+                        <table class="docs-table">
+                            <thead>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>.form-group</code></td>
+                                    <td>Wrapper for form field and label</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.form-label</code></td>
+                                    <td>Label for form controls</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.form-control</code></td>
+                                    <td>Input, textarea, select controls</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.form-help</code></td>
+                                    <td>Helper text below form controls</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.checkbox</code></td>
+                                    <td>Checkbox wrapper with label</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.radio</code></td>
+                                    <td>Radio button wrapper with label</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="docs-section" id="navigation-docs">
+                        <h2>Navigation</h2>
+                        <p>Responsive navigation components for site navigation.</p>
+                        
+                        <h3>Main Navigation Structure</h3>
+                        <div class="code-block">
+<pre><code>&lt;header&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="header-content"&gt;
+            &lt;div class="logo"&gt;
+                &lt;div class="logo-icon"&gt;
+                    &lt;i class="fas fa-palette"&gt;&lt;/i&gt;
+                &lt;/div&gt;
+                &lt;span&gt;UI Library&lt;/span&gt;
+            &lt;/div&gt;
+            
+            &lt;nav class="main-nav"&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="index.html" class="active"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="components.html"&gt;Components&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="documentation.html"&gt;Docs&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="examples.html"&gt;Examples&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="customize.html"&gt;Customize&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/nav&gt;
+            
+            &lt;button class="mobile-menu-btn" aria-label="Toggle menu"&gt;
+                &lt;i class="fas fa-bars"&gt;&lt;/i&gt;
+            &lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/header&gt;</code></pre>
+                        </div>
+                        
+                        <h3>Navigation Classes</h3>
+                        <table class="docs-table">
+                            <thead>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>.header-content</code></td>
+                                    <td>Container for header elements</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.logo</code></td>
+                                    <td>Logo container with icon and text</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.main-nav</code></td>
+                                    <td>Main navigation container</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.main-nav ul</code></td>
+                                    <td>Navigation list</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.main-nav a</code></td>
+                                    <td>Navigation links</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.main-nav a.active</code></td>
+                                    <td>Active navigation link</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.mobile-menu-btn</code></td>
+                                    <td>Mobile menu toggle button</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <h3>Responsive Behavior</h3>
+                        <p>The navigation automatically switches to a mobile-friendly hamburger menu on screens smaller than 768px. The mobile menu includes smooth animations and proper accessibility features.</p>
+                    </div>
+                    
+                    <!-- Spacing Utilities -->
+                    <div class="docs-section" id="spacing">
+                        <h2>Spacing Utilities</h2>
+                        <p>Consistent spacing utilities based on CSS custom properties. These classes follow a scale from xs (extra small) to xxl (extra extra large).</p>
+                        
+                        <h3>Spacing Scale</h3>
+                        <table class="docs-table">
+                            <thead>
+                                <tr>
+                                    <th>Variable</th>
+                                    <th>Value</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>--space-xs</code></td>
+                                    <td>0.5rem</td>
+                                    <td>Extra small spacing</td>
+                                </tr>
+                                <tr>
+                                    <td><code>--space-sm</code></td>
+                                    <td>0.75rem</td>
+                                    <td>Small spacing</td>
+                                </tr>
+                                <tr>
+                                    <td><code>--space-md</code></td>
+                                    <td>1rem</td>
+                                    <td>Medium spacing (base)</td>
+                                </tr>
+                                <tr>
+                                    <td><code>--space-lg</code></td>
+                                    <td>1.5rem</td>
+                                    <td>Large spacing</td>
+                                </tr>
+                                <tr>
+                                    <td><code>--space-xl</code></td>
+                                    <td>2rem</td>
+                                    <td>Extra large spacing</td>
+                                </tr>
+                                <tr>
+                                    <td><code>--space-xxl</code></td>
+                                    <td>3rem</td>
+                                    <td>Extra extra large spacing</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <h3>Margin Utilities</h3>
+                        <div class="code-block">
+<pre><code>&lt;!-- Margin Top --&gt;
+&lt;div class="mt-1"&gt;Small top margin&lt;/div&gt;
+&lt;div class="mt-2"&gt;Medium top margin&lt;/div&gt;
+&lt;div class="mt-3"&gt;Large top margin&lt;/div&gt;
+&lt;div class="mt-4"&gt;Extra large top margin&lt;/div&gt;
+&lt;div class="mt-5"&gt;Extra extra large top margin&lt;/div&gt;
+
+&lt;!-- Margin Bottom --&gt;
+&lt;div class="mb-1"&gt;Small bottom margin&lt;/div&gt;
+&lt;div class="mb-2"&gt;Medium bottom margin&lt;/div&gt;
+&lt;div class="mb-3"&gt;Large bottom margin&lt;/div&gt;
+&lt;div class="mb-4"&gt;Extra large bottom margin&lt;/div&gt;
+&lt;div class="mb-5"&gt;Extra extra large bottom margin&lt;/div&gt;</code></pre>
+                        </div>
+                        
+                        <h3>Gap Utilities (Flex/Grid)</h3>
+                        <div class="code-block">
+<pre><code>&lt;div class="flex gap-1"&gt;
+    &lt;div&gt;Item 1&lt;/div&gt;
+    &lt;div&gt;Item 2&lt;/div&gt;
+    &lt;div&gt;Item 3&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="flex gap-2"&gt;
+    &lt;div&gt;Item 1&lt;/div&gt;
+    &lt;div&gt;Item 2&lt;/div&gt;
+    &lt;div&gt;Item 3&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="flex gap-3"&gt;
+    &lt;div&gt;Item 1&lt;/div&gt;
+    &lt;div&gt;Item 2&lt;/div&gt;
+    &lt;div&gt;Item 3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                        </div>
+                    </div>
+                    
+                    <!-- Colors Utilities -->
+                    <div class="docs-section" id="colors">
+                        <h2>Color System</h2>
+                        <p>A comprehensive color system using CSS custom properties for easy theming and consistency.</p>
+                        
+                        <h3>Primary Colors</h3>
+                        <table class="docs-table">
+                            <thead>
+                                <tr>
+                                    <th>Variable</th>
+                                    <th>Value</th>
+                                    <th>Usage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>--primary</code></td>
+                                    <td>#4361ee</td>
+                                    <td>Primary brand color</td>
+                                </tr>
+                                <tr>
+                                    <td><code>--primary-light</code></td>
+                                    <td>#4895ef</td>
+                                    <td>Light primary variant</td>
+                                </tr>
+                                <tr>
+                                    <td><code>--primary-dark</code></td>
+                                    <td>#3a0ca3</td>
+                                    <td>Dark primary variant</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <h3>Secondary Colors</h3>
+                        <table class="docs-table">
+                            <thead>
+                                <tr>
+                                    <th>Variable</th>
+                                    <th>Value</th>
+                                    <th>Usage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>--secondary</code></td>
+                                    <td>#f72585</td>
+                                    <td>Secondary brand color</td>
+                                </tr>
+                                <tr>
+                                    <td><code>--secondary-light</code></td>
+                                    <td>#ff6ba9</td>
+                                    <td>Light secondary variant</td>
+                                </tr>
+                                <tr>
+                                    <td><code>--secondary-dark</code></td>
+                                    <td>#b5179e</td>
+                                    <td>Dark secondary variant</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <h3>Status Colors</h3>
+                        <table class="docs-table">
+                            <thead>
+                                <tr>
+                                    <th>Variable</th>
+                                    <th>Value</th>
+                                    <th>Usage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>--success</code></td>
+                                    <td>#4cc9f0</td>
+                                    <td>Success states, positive feedback</td>
+                                </tr>
+                                <tr>
+                                    <td><code>--warning</code></td>
+                                    <td>#f8961e</td>
+                                    <td>Warning states, caution</td>
+                                </tr>
+                                <tr>
+                                    <td><code>--danger</code></td>
+                                    <td>#e63946</td>
+                                    <td>Error states, negative feedback</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <h3>Neutral Colors</h3>
+                        <table class="docs-table">
+                            <thead>
+                                <tr>
+                                    <th>Variable</th>
+                                    <th>Value</th>
+                                    <th>Usage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>--dark</code></td>
+                                    <td>#212529</td>
+                                    <td>Dark text and elements</td>
+                                </tr>
+                                <tr>
+                                    <td><code>--light</code></td>
+                                    <td>#f8f9fa</td>
+                                    <td>Light backgrounds</td>
+                                </tr>
+                                <tr>
+                                    <td><code>--gray</code></td>
+                                    <td>#6c757d</td>
+                                    <td>Muted text and borders</td>
+                                </tr>
+                                <tr>
+                                    <td><code>--gray-light</code></td>
+                                    <td>#e9ecef</td>
+                                    <td>Light borders and backgrounds</td>
+                                </tr>
+                                <tr>
+                                    <td><code>--gray-dark</code></td>
+                                    <td>#343a40</td>
+                                    <td>Dark borders and backgrounds</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <h3>Text Color Utilities</h3>
+                        <div class="code-block">
+<pre><code>&lt;p class="text-primary"&gt;Primary colored text&lt;/p&gt;
+&lt;p class="text-success"&gt;Success colored text&lt;/p&gt;
+&lt;p class="text-danger"&gt;Danger colored text&lt;/p&gt;
+&lt;p class="text-muted"&gt;Muted/gray colored text&lt;/p&gt;</code></pre>
+                        </div>
+                    </div>
+                    
+                    <!-- Typography Utilities -->
+                    <div class="docs-section" id="typography">
+                        <h2>Typography</h2>
+                        <p>Consistent typography system with font families, sizes, and utility classes.</p>
+                        
+                        <h3>Font Families</h3>
+                        <table class="docs-table">
+                            <thead>
+                                <tr>
+                                    <th>Variable</th>
+                                    <th>Value</th>
+                                    <th>Usage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>--font-main</code></td>
+                                    <td>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif</td>
+                                    <td>Main body text font</td>
+                                </tr>
+                                <tr>
+                                    <td><code>--font-heading</code></td>
+                                    <td>'Arial Rounded MT Bold', 'Arial', sans-serif</td>
+                                    <td>Headings and display text</td>
+                                </tr>
+                                <tr>
+                                    <td><code>--font-mono</code></td>
+                                    <td>'Courier New', Courier, monospace</td>
+                                    <td>Code and monospaced text</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <h3>Text Size Utilities</h3>
+                        <div class="code-block">
+<pre><code>&lt;p class="text-small"&gt;Small text (0.875rem)&lt;/p&gt;
+&lt;p&gt;Normal text (1rem)&lt;/p&gt;
+&lt;p class="text-large"&gt;Large text (1.125rem)&lt;/p&gt;
+&lt;p class="text-xl"&gt;Extra large text (1.25rem)&lt;/p&gt;</code></pre>
+                        </div>
+                        
+                        <h3>Text Alignment Utilities</h3>
+                        <div class="code-block">
+<pre><code>&lt;p class="text-left"&gt;Left aligned text&lt;/p&gt;
+&lt;p class="text-center"&gt;Centered text&lt;/p&gt;
+&lt;p class="text-right"&gt;Right aligned text&lt;/p&gt;</code></pre>
+                        </div>
+                        
+                        <h3>Headings</h3>
+                        <p>The library provides consistent heading styles automatically. All headings use the heading font family and appropriate spacing.</p>
+                        <div class="code-block">
+<pre><code>&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;</code></pre>
+                        </div>
+                    </div>
+                    
+                    <!-- Responsive Utilities -->
+                    <div class="docs-section" id="responsive">
+                        <h2>Responsive Design</h2>
+                        <p>The library is built with a mobile-first responsive design approach. It includes breakpoints and responsive utilities for building adaptive layouts.</p>
+                        
+                        <h3>Breakpoints</h3>
+                        <table class="docs-table">
+                            <thead>
+                                <tr>
+                                    <th>Breakpoint</th>
+                                    <th>Screen Size</th>
+                                    <th>Usage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Mobile</strong></td>
+                                    <td>Up to 480px</td>
+                                    <td>Small mobile devices</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Tablet</strong></td>
+                                    <td>481px - 768px</td>
+                                    <td>Tablets and large phones</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Desktop</strong></td>
+                                    <td>769px - 1024px</td>
+                                    <td>Small desktops and laptops</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Large Desktop</strong></td>
+                                    <td>1025px and above</td>
+                                    <td>Large screens and monitors</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <h3>Container Responsive Behavior</h3>
+                        <p>The main container adjusts its padding based on screen size:</p>
+                        <div class="code-block">
+<pre><code>/* Default (desktop) */
+.container {
+    padding: 0 var(--space-md); /* 1rem */
+}
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 var(--space-sm); /* 0.75rem */
+    }
+}</code></pre>
+                        </div>
+                        
+                        <h3>Responsive Navigation</h3>
+                        <p>The navigation automatically switches to mobile mode at 768px:</p>
+                        <div class="code-block">
+<pre><code>@media (max-width: 768px) {
+    .main-nav {
+        display: none;
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        right: 0;
+        background: var(--white);
+        box-shadow: var(--shadow-lg);
+    }
+    
+    .main-nav.active {
+        display: block;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+}</code></pre>
+                        </div>
+                        
+                        <h3>Responsive Grid & Flex</h3>
+                        <p>The library includes responsive grid layouts and flex utilities:</p>
+                        <div class="code-block">
+<pre><code>&lt;!-- Feature grid adjusts automatically --&gt;
+&lt;div class="feature-grid"&gt;
+    &lt;div class="feature-card"&gt;Feature 1&lt;/div&gt;
+    &lt;div class="feature-card"&gt;Feature 2&lt;/div&gt;
+    &lt;div class="feature-card"&gt;Feature 3&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Flex utilities for responsive layouts --&gt;
+&lt;div class="flex flex-wrap"&gt;
+    &lt;div class="card" style="flex: 1 1 300px;"&gt;Card 1&lt;/div&gt;
+    &lt;div class="card" style="flex: 1 1 300px;"&gt;Card 2&lt;/div&gt;
+    &lt;div class="card" style="flex: 1 1 300px;"&gt;Card 3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                        </div>
+                        
+                        <h3>Responsive Text</h3>
+                        <p>Font sizes automatically adjust on smaller screens:</p>
+                        <div class="code-block">
+<pre><code>/* Default sizes */
+.hero h1 {
+    font-size: 3rem;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+}</code></pre>
+                        </div>
+                    </div>
+                    
                     <div class="docs-section" id="customization">
                         <h2>Customization</h2>
                         <p>The library uses CSS custom properties (variables) for easy customization. Override these variables in your own CSS:</p>
