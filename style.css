@@ -1,10 +1,6 @@
-/* ============================================
-   UI Component Library - Main Stylesheet
-   ============================================ */
 
-/* CSS Custom Properties (Design Tokens) */
 :root {
-    /* Color Palette */
+  
     --primary: #4361ee;
     --primary-light: #4895ef;
     --primary-dark: #3a0ca3;
@@ -22,12 +18,12 @@
     --white: #ffffff;
     --black: #000000;
     
-    /* Typography */
+   
     --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --font-heading: 'Arial Rounded MT Bold', 'Arial', sans-serif;
     --font-mono: 'Courier New', Courier, monospace;
     
-    /* Spacing */
+    
     --space-xs: 0.5rem;
     --space-sm: 0.75rem;
     --space-md: 1rem;
@@ -42,24 +38,27 @@
     --radius-xl: 16px;
     --radius-full: 999px;
     
-    /* Shadows */
+ 
     --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
     --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.12);
     --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.15);
     --shadow-xl: 0 12px 24px rgba(0, 0, 0, 0.2);
-    
-    /* Transitions */
+
     --transition-fast: 150ms ease;
     --transition-normal: 250ms ease;
     --transition-slow: 350ms ease;
     
-    /* Layout */
+    
     --container-max: 1200px;
     --header-height: 70px;
     --footer-height: auto;
 }
 
-/* Base Styles */
+html
+{
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -150,11 +149,8 @@ header {
     background-color: rgba(67, 97, 238, 0.1);
 }
 
-.mobile-menu-btn {
-    display: none;
-}
 
-/* Hero Section */
+
 .hero {
     padding: var(--space-xxl) 0;
     background: linear-gradient(135deg, #f5f7ff 0%, #eef1ff 100%);
@@ -738,6 +734,11 @@ footer {
     height: fit-content;
 }
 
+.docs-nav {
+    max-height: calc(100vh - var(--header-height) - var(--space-xxl));
+    overflow-y: auto;
+}
+
 .docs-nav h3 {
     color: var(--dark);
     margin-bottom: var(--space-sm);
@@ -1168,16 +1169,7 @@ footer {
    ============================================ */
 
 /* Mobile Menu Button */
-.mobile-menu-btn {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: var(--space-xs);
-    border-radius: var(--radius-sm);
-    color: var(--dark);
-    transition: background-color var(--transition-fast);
-}
+
 
 .mobile-menu-btn:hover {
     background-color: var(--gray-light);
@@ -1244,5 +1236,29 @@ footer {
         background-color: rgba(67, 97, 238, 0.1);
         color: var(--primary);
         border-left-color: var(--primary);
+    }
+}
+.mobile-menu-btn {
+    display: none;  /* Only need this once */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: var(--space-xs);
+    border-radius: var(--radius-sm);
+    color: var(--dark);
+    transition: background-color var(--transition-fast);
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: flex;  /* Show on mobile */
+    }
+    
+    .mobile-menu-btn:hover {
+        background-color: var(--gray-light);
     }
 }
